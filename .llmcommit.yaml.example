@@ -1,0 +1,8 @@
+# llmcommit configuration
+# Copy to .llmcommit.yaml in your repo root or ~/.llmcommit.yaml for global config.
+
+# Google Gemini model to use (default: gemini-2.0-flash)
+model: gemini-2.0-flash
+
+# API key — prefer setting GEMINI_API_KEY env var instead of storing here
+api_key: ""
