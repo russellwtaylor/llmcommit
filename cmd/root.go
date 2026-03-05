@@ -61,7 +61,7 @@ func run(cmd *cobra.Command, args []string) error {
 	cfg, err := config.Load(model)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
-		return err
+		return nil
 	}
 
 	// Step 2: Get staged diff.
