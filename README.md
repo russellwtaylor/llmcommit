@@ -11,7 +11,7 @@ A CLI that generates AI-powered [Conventional Commits](https://www.conventionalc
 Requires Go 1.21+.
 
 ```sh
-go install github.com/russtaylor/llmcommit@latest
+go install github.com/russellwtaylor/llmcommit@latest
 ```
 
 This installs `llmcommit` to your `$GOPATH/bin`. Make sure that's on your `$PATH`:
@@ -23,7 +23,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 ### Option 2: Build from source
 
 ```sh
-git clone https://github.com/russtaylor/llmcommit.git
+git clone https://github.com/russellwtaylor/llmcommit.git
 cd llmcommit
 make install   # runs go install
 ```
@@ -136,18 +136,18 @@ If your staged diff is very large (>12k tokens), `llmcommit` automatically summa
 
 Config is loaded in this priority order (highest wins):
 
-| Priority | Source |
-|----------|--------|
-| 1 | CLI flags (`--model`, etc.) |
-| 2 | Environment variables (`GEMINI_API_KEY`, `LLMCOMMIT_MODEL`) |
-| 3 | Project config (`.llmcommit.yaml` in the repo root) |
-| 4 | Global config (`~/.llmcommit.yaml`) |
+| Priority | Source                                                      |
+| -------- | ----------------------------------------------------------- |
+| 1        | CLI flags (`--model`, etc.)                                 |
+| 2        | Environment variables (`GEMINI_API_KEY`, `LLMCOMMIT_MODEL`) |
+| 3        | Project config (`.llmcommit.yaml` in the repo root)         |
+| 4        | Global config (`~/.llmcommit.yaml`)                         |
 
 ### Config file fields
 
-| Field     | Default            | Description                             |
-|-----------|--------------------|-----------------------------------------|
-| `model`   | `gemini-2.0-flash` | Gemini model to use                     |
+| Field     | Default            | Description                               |
+| --------- | ------------------ | ----------------------------------------- |
+| `model`   | `gemini-2.0-flash` | Gemini model to use                       |
 | `api_key` | —                  | API key (prefer `GEMINI_API_KEY` env var) |
 
 ### Example config file
@@ -161,10 +161,11 @@ cp .llmcommit.yaml.example .llmcommit.yaml
 ```yaml
 # .llmcommit.yaml
 model: gemini-2.0-flash
-api_key: ""  # leave empty and use GEMINI_API_KEY env var instead
+api_key: "" # leave empty and use GEMINI_API_KEY env var instead
 ```
 
 Place the file at:
+
 - **`.llmcommit.yaml`** in your repo root — applies to that project only
 - **`~/.llmcommit.yaml`** — applies globally across all repos
 
@@ -172,20 +173,20 @@ Place the file at:
 
 ### Environment variables
 
-| Variable          | Description                      |
-|-------------------|----------------------------------|
-| `GEMINI_API_KEY`  | Your Gemini API key (required)   |
+| Variable          | Description                        |
+| ----------------- | ---------------------------------- |
+| `GEMINI_API_KEY`  | Your Gemini API key (required)     |
 | `LLMCOMMIT_MODEL` | Model override (same as `--model`) |
 
 ---
 
 ## CLI Flags
 
-| Flag          | Description                                             |
-|---------------|---------------------------------------------------------|
-| `--dry-run`   | Print the generated message without committing          |
-| `--amend`     | Amend the previous commit instead of creating a new one |
-| `--model`     | Override the model (e.g. `--model gemini-1.5-pro`)      |
+| Flag        | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| `--dry-run` | Print the generated message without committing          |
+| `--amend`   | Amend the previous commit instead of creating a new one |
+| `--model`   | Override the model (e.g. `--model gemini-1.5-pro`)      |
 
 ---
 

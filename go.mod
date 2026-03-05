@@ -1,4 +1,4 @@
-module github.com/russtaylor/llmcommit
+module github.com/russellwtaylor/llmcommit
 
 go 1.25.5
 
