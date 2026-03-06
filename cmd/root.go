@@ -8,11 +8,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/russtaylor/llmcommit/config"
-	"github.com/russtaylor/llmcommit/internal/ai"
-	"github.com/russtaylor/llmcommit/internal/commit"
-	"github.com/russtaylor/llmcommit/internal/git"
-	"github.com/russtaylor/llmcommit/internal/ui"
+	"github.com/russellwtaylor/llmcommit/config"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/commit"
+	"github.com/russellwtaylor/llmcommit/internal/git"
+	"github.com/russellwtaylor/llmcommit/internal/ui"
 )
 
 var (

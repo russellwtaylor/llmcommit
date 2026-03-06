@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/russtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
 )
 
 // MockRunner records calls and returns configurable output/error.

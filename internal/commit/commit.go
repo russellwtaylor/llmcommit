@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/russtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
 )
 
 // Runner executes a command and returns combined output and error.

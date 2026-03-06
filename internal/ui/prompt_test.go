@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/russtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
 )
 
 // noopEditor is a mock openEditor that does nothing and returns nil.

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/russtaylor/llmcommit/config"
-	"github.com/russtaylor/llmcommit/internal/ai"
-	"github.com/russtaylor/llmcommit/internal/ui"
+	"github.com/russellwtaylor/llmcommit/config"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/ui"
 )
 
 // mockLLM is a test double for ai.LLM.

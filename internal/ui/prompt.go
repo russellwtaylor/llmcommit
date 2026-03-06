@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/russtaylor/llmcommit/internal/ai"
+	"github.com/russellwtaylor/llmcommit/internal/ai"
 )
 
 // ErrCancelled is returned when the user chooses to cancel.
